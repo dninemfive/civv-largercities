@@ -27,8 +27,8 @@
     <Mod id="72e3495c-054e-4a15-9c49-70e2ca197621" minversion="0" maxversion="999" title="" />
   </Blocks>
   <Files>
-    <File md5="FF49565D819EDE93AAD2A4092BDF09EC" import="0">cityWorkDistance.sql</File>
-    <File md5="AF0B942B2AF69F210E3115E122F00476" import="0">xml.xml</File>
+    <File md5="FF49565D819EDE93AAD2A4092BDF09EC" import="0">Patches_VMC.sql</File>
+    <File md5="AF0B942B2AF69F210E3115E122F00476" import="0">Patches_Vanilla.xml</File>
   </Files>
   <Actions>
     <OnModActivated>

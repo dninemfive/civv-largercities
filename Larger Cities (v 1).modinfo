@@ -2,7 +2,7 @@
 <Mod id="928a9243-21e5-4e50-951d-ff9c566daeb0" version="1">
   <Properties>
     <Name>Larger Cities</Name>
-    <Stability>Alpha</Stability>
+    <Stability>Alpha</Stability> <!-- TODO: update this to whatever the equivalent of "release" is -->
     <Teaser>Intended to reduce lag and crashing on large maps, this mod makes the following changes which generally make cities more powerf</Teaser>
     <Description>Intended to reduce lag and crashing on large maps, this mod makes the following changes which generally make cities more powerful:[NEWLINE][NEWLINE]- Minimum distance between cities increased to 5[NEWLINE]- City workable radius increased to 5 (requires whoward's DLL (or CPP))[NEWLINE]- Radius where you can buy plots increased to 5 (requires whoward's DLL (or CPP))[NEWLINE]- Cost to obtain plots reduced by 60%</Description>
     <Authors>dninemfive</Authors>
@@ -24,16 +24,17 @@
     <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="DLL - Various Mod Components" />
   </References>
   <Blocks>
+	<!-- I don't recall which mod this is -->
     <Mod id="72e3495c-054e-4a15-9c49-70e2ca197621" minversion="0" maxversion="999" title="" />
   </Blocks>
   <Files>
-    <File md5="FF49565D819EDE93AAD2A4092BDF09EC" import="0">Patches_VMC.sql</File>
-    <File md5="AF0B942B2AF69F210E3115E122F00476" import="0">Patches_Vanilla.xml</File>
+    <File md5="007784CE20A918C8C6A6D10522414F49" import="0">Patches_VMC.sql</File>
+    <File md5="36778543273D04C40A4DB2203408D88C" import="0">Patches_Vanilla.xml</File>
   </Files>
   <Actions>
     <OnModActivated>
-      <UpdateDatabase>xml.xml</UpdateDatabase>
-      <UpdateDatabase>cityWorkDistance.sql</UpdateDatabase>
+      <UpdateDatabase>Patches_Vanilla.xml</UpdateDatabase>
+      <UpdateDatabase>Patches_VMC.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
 </Mod>

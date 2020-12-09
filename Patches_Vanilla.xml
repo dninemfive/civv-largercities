@@ -3,15 +3,16 @@
 <GameData>
 	<Defines>
 		<Update>
-			<Where Name="PLOT_BASE_COST"/>
-			<Set Value="20"/>
+			<Where Name="PLOT_BASE_COST"/> <!-- Cost of buying tiles with Gold only (?) -->
+			<Set Value="20"/> <!-- Default 50 -->
 		</Update>
 		<Update>
-			<Where Name="MIN_CITY_RANGE"/>
-			<Set Value="5"/>
+			<Where Name="MIN_CITY_RANGE"/> <!-- Minimum number of plots between cities -->
+			<Set Value="5"/> <!-- Default 3 -->
 		</Update>
 	</Defines>
 	<Language_en_US>
+		<!-- Update the English database to have the correct info about the min city range. -->
 		<Delete TAG="TXT_KEY_MISSION_BUILD_CITY_DISABLED_HELP"/>
 		<Row Tag="TXT_KEY_MISSION_BUILD_CITY_DISABLED_HELP">
 			<Text>Cannot found a City within 5 Tiles of another City.</Text>
